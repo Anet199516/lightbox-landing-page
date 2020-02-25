@@ -28,10 +28,10 @@
     <section class="section-a">
         <div class="container">
             <div>
-                <h1>The headdphones of the future</h1>
+                <h1>The headphones of the future</h1>
                 <p>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    In obcaecati amet architecto porro, corrupti 
+                    In obcaecati amet architecto porro, corrupti
                     temporibus adipisci fugit nemo minima deserunt!
                 </p>
                 <a href="#" class="btn">Read More</a>
@@ -40,12 +40,118 @@
         </div>
     </section>
 
+    <!-- Overlay text -->
+    <section class="section-b">
+        <div class="overlay">
+            <div class="section-b-inner">
+                <h3>Loud and Clear</h3>
+                <h2>People Aren't Hearing All The Music</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quisquam deserunt, dolores tempora dicta eligendi quae.
+                    Neque perspiciatis facere quis dolorum?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+
+    <section class="section-c">
+        <div class="gallery">
+            <a href="./dist/img/audience-1868137_640.jpg" class="big">
+                <img src="./dist/img/audience-1868137_640.jpg" alt="">
+            </a>
+            <a href="./dist/img/girl-869213_640.jpg" class="big">
+                <img src="./dist/img/girl-869213_640.jpg" alt="">
+            </a>
+            <a href="https://cdn.pixabay.com/photo/2017/01/31/13/50/headphones-2024215_960_720.png" class="big">
+                <img src="https://cdn.pixabay.com/photo/2017/01/31/13/50/headphones-2024215_960_720.png" alt="">
+            </a>
+            <a href="https://cdn.pixabay.com/photo/2017/08/02/19/09/people-2572972_960_720.jpg" class="big">
+                <img src="https://cdn.pixabay.com/photo/2017/08/02/19/09/people-2572972_960_720.jpg" alt="">
+            </a>
+            <a href="./dist/img/white-2597981_1280.jpg" class="big">
+                <img src="./dist/img/white-2597981_1280.jpg" alt="">
+            </a>
+            <a href="https://cdn.pixabay.com/photo/2017/08/02/19/09/people-2572972_960_720.jpg" class="big">
+                <img src="https://cdn.pixabay.com/photo/2017/08/02/19/09/people-2572972_960_720.jpg" alt="">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section-footer">
+        <div class="container">
+            <div>
+                <h2>Lorem ipsum dolor sit</h2>
+             <a href="http://twitter.com">
+                <i class="fab fa-twitter fa-2x"></i>
+             </a>
+             <a href="http://facebook.com">
+                <i class="fab fa-facebook fa-2x"></i>
+             </a>
+             <a href="http://youtube.com">
+                <i class="fab fa-youtube fa-2x"></i>
+             </a>
+            </div>
+
+            <div>
+                <h3>Company Info</h3>
+                <ul>
+                    <li><a href="#">All products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+
+                <div>
+                    <h3>Blog Posts</h3>
+                    <ul>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                        <li><a href="#">Lorem ipsum dolor</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Subscribe</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit</p>
+                    <form  name="email-form" method="POST" data-netlify="true">
+                        <div class="email-form">
+                            <span class="form-control-wrap">
+                                <input 
+                                type="email"
+                                name="email"
+                                id="email"
+                                size="40"
+                                class="form-control"
+                                placeholder="Email">
+                            </span>
+                            <button type="submit" class="form-control submit">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+        </div>
+    </footer>
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/95d3930749.js" crossorigin="anonymous"></script>
+    <script src=""></script>
     <script src="dist/js/simple-lightbox.min.js"></script>
+
+    <script>
+        $(function() {
+            const gallery = $('.gallery a').simpleLightbox();
+        });
+    </script>
 </body>
 
 </html>
